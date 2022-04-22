@@ -1,0 +1,19 @@
+<clr-datagrid>
+	<clr-dg-column>Resource</clr-dg-column>
+	<clr-dg-column>Deployment</clr-dg-column>  
+	<clr-dg-column>External IP</clr-dg-column>
+	<clr-dg-column>Internal IP</clr-dg-column>
+	<clr-dg-column>Status</clr-dg-column>
+	<clr-dg-column>VM Name</clr-dg-column>
+	<clr-dg-column>Type</clr-dg-column>  
+	<clr-dg-row *ngFor="let entry of cmdbEntries" [ngStyle]="{'color' : entry.status.conditions.lenght==1 ? 'green' : 'red'}"> 
+		<clr-dg-cell>{{entry.metadata.name}}</clr-dg-cell>
+		<clr-dg-cell>{{entry}}</clr-dg-cell>
+		<clr-dg-cell>{{entry}}</clr-dg-cell>
+		<clr-dg-cell>{{entry}}</clr-dg-cell> 
+		<clr-dg-cell>{{entry}}</clr-dg-cell>
+		<clr-dg-cell>{{entry}}</clr-dg-cell>
+		<clr-dg-cell>{{entry}}</clr-dg-cell>		
+	 </clr-dg-row> 
+	 
+</clr-datagrid>

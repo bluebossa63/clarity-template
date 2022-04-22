@@ -1,0 +1,40 @@
+<div class="main-container">
+	<!-- header class="header-7" -->
+	<header class="header-7">
+		<div class="branding">
+			<a href="..." class="nav-link"> <clr-icon shape="cloud"></clr-icon>
+				<span class="title">Tanzu Community Edition Demo</span>
+			</a>
+		</div> 
+		<div class="header-nav">
+			<a href="https://www.vmworld.com/en/us/index.html" class="nav-link" target="new"><span class="nav-text">SDDC Meeting</span></a>
+		</div>
+		<div class="header-actions">
+	        <a href="javascript://" class="nav-link nav-icon-text">
+	            <img src="assets/MyData_Icon5.png" width="58px" height="36px">
+	            <span class="nav-text">Swisscom</span>
+	        </a>
+        </div>
+	</header>
+	<div class="content-container">
+		<div class="content-area">
+			<router-outlet></router-outlet>
+		</div>
+		<clr-vertical-nav [clrVerticalNavCollapsible]="true"
+			[(clrVerticalNavCollapsed)]="collapsed"> 
+			<a clrVerticalNavLink [routerLink]="'/event-list'"
+				routerLinkActive="active"> <clr-icon clrVerticalNavIcon
+					shape="event"></clr-icon>Images
+			</a> 
+			<a clrVerticalNavLink [routerLink]="'/cmdb-list'"
+				routerLinkActive="active"> <clr-icon clrVerticalNavIcon
+					shape="host-group"></clr-icon>Builds
+			</a> 
+			<div class="nav-divider"></div>
+			<a clrVerticalNavLink href="https://twitter.com/vgigacast?lang=en"
+				routerLinkActive="active"> <clr-icon clrVerticalNavIcon
+					shape="talk-bubbles"></clr-icon>Support
+			</a> 
+		</clr-vertical-nav>
+	</div>
+</div>
