@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "npm run ng",
-    "start": "npm run ng serve",
+    "start": "npm run ng serve --port 8012",
     "build": "npm run ng build --configuration=production --prod",
     "test": "npm run ng test",
     "lint": "npm run ng lint",
