@@ -4,12 +4,12 @@
   "scripts": {
     "ng": "npm run ng",
     "start": "npm run ng serve --port 8080",
-    "build": "npm run ng build --configuration=production --prod",
-    "test": "npm run ng test",
-    "lint": "npm run ng lint",
-    "e2e": "npm run ng e2e",
-    "dev": "npm run nodemon --experimental-modules index.mjs",
-    "build-maven": "npm run ng build --configuration=production --prod"
+    "build": "ng build --configuration=production --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "dev": "nodemon --experimental-modules index.mjs",
+    "build-maven": "ng build --configuration=production --prod"
   },
   "private": true,
   "dependencies": {
