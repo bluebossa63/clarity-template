@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.0.0",
   "scripts": {
-    "start": "ng serve --port 8080",
+    "start": "npm run ng serve --port 8080",
     "build": "ng build --configuration=production --prod",
     "test": "ng test",
     "lint": "ng lint",
