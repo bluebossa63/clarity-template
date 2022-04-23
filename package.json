@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev": "nodemon --experimental-modules index.mjs",
-    "build-maven": "ng build --configuration=production --prod"
+    "build-maven": "ng build --configuration=production --prod",
+    "postinstall": "npm -g install"
   },
   "private": true,
   "dependencies": {
