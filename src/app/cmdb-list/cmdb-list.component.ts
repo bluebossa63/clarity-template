@@ -1,6 +1,5 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import { HttpClient,HttpHeaders } from '@angular/common/http';
-import { Options } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-cmdb-list',
