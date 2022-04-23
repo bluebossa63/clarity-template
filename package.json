@@ -3,14 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "prestart": "ng build --configuration=production --prod",
     "start": "ng serve",
     "build": "ng build --configuration=production --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev": "nodemon --experimental-modules index.mjs",
-    "build-maven": "ng build --configuration=production --prod",
+    "build-maven": "ng build --configuration=production --prod"
   },
   "private": true,
   "dependencies": {
@@ -51,5 +50,9 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
+  },
+  "engines": {
+    "node": "12.21.0",
+    "npm": "8.7.0"
   }
 }
