@@ -68,12 +68,16 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "frontend:build",
-            "proxyConfig": "src/proxy.conf.json"
+            "proxyConfig": "src/proxy.conf.json",
+            "port": 8080,
+            "host": "0.0.0.0"
           },
           "configurations": {
             "production": {
               "browserTarget": "frontend:build:production",
-              "proxyConfig": "src/proxy.conf.json"
+              "proxyConfig": "src/proxy.conf.json",
+              "port": 8080,
+              "host": "0.0.0.0"
             }
           }
         },
