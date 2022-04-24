@@ -1,9 +1,9 @@
 {
-  "name": "frontend",
-  "version": "0.0.0",
+  "name": "clarity-template",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --verbose=true --port=8080 --publicHost='https://clarity-sample.ne.local' --allowedHosts='0.0.0.0/0' | tee /workspace/server.log",
+    "start": "ng serve --port=8080 | tee /workspace/server.log",
     "build": "ng build --configuration=production --prod",
     "test": "ng test",
     "lint": "ng lint",
@@ -45,10 +45,17 @@
     "protractor": "^7.0.0",
     "ts-node": "~7.0.0",
     "tslint": "^6.0.0",
-    "typescript": ">=4.4.2"
+    "typescript": ">=4.4.2",
+    "jasmine-core": "~4.1.0",
+    "jasmine-spec-reporter": "~7.0.0",
+    "karma": "~6.3.19",
+    "karma-chrome-launcher": "~3.1.1",
+    "karma-coverage-istanbul-reporter": "~3.0.3",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "karma-jasmine": "~5.0.0"    
   },
   "engines": {
     "node": "v16.14.2",
-    "npm": "8.7.0"
+    "npm": "8.5.0"
   }
 }

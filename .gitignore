@@ -46,3 +46,5 @@ testem.log
 .DS_Store
 Thumbs.db
 /node/
+node-v16.14.2-linux-x64.tar.gz
+.angular
