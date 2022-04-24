@@ -70,14 +70,16 @@
             "browserTarget": "frontend:build",
             "proxyConfig": "src/proxy.conf.json",
             "port": 8080,
-            "host": "0.0.0.0"
+            "host": "0.0.0.0",
+            "disableHostCheck": true
           },
           "configurations": {
             "production": {
               "browserTarget": "frontend:build:production",
               "proxyConfig": "src/proxy.conf.json",
               "port": 8080,
-              "host": "0.0.0.0"
+              "host": "0.0.0.0",
+              "disableHostCheck": true
             }
           }
         },
