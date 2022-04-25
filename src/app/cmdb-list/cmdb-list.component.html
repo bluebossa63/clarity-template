@@ -3,7 +3,7 @@
 	<clr-dg-column>workload</clr-dg-column>  
 	<clr-dg-column>state</clr-dg-column>
 	<clr-dg-column>image</clr-dg-column>
-	<clr-dg-row *ngFor="let entry of cmdbEntries" [ngStyle]="{'color' : entry.status.conditions.size() > 0 ? 'green' : 'red'}"> 
+	<clr-dg-row *ngFor="let entry of cmdbEntries" [ngStyle]="{'color' : entry.status.conditions.length > 0 ? 'green' : 'red'}"> 
 		<clr-dg-cell>{{entry.metadata.name}}</clr-dg-cell>
 		<clr-dg-cell>{{entry.metadata.labels['carto.run/workload-name']}}</clr-dg-cell>
 		<clr-dg-cell>{{entry.status.conditions}}</clr-dg-cell>
