@@ -4,7 +4,7 @@ You'll have to adapt [proxy.conf.json](src/main/frontend/src/proxy.conf.json) to
 
 ## starting the app locally
 
-```bash
+```txt
 daniele@kubuntu:~/dev/clarity-template$ ng serve
 Warning: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
 ****************************************************************************************
